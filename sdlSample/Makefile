@@ -1,2 +1,7 @@
+#	gcc test.c `sdl-config --libs --cflags`
+
 all:
-	gcc test.c `sdl-config --libs --cflags`
+	g++ test.cpp -I/usr/include/SDL -lSDL
+
+clean:
+	-rm a.out
